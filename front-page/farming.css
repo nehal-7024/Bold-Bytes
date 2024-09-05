@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgba(243, 239, 239, 0.673); */
+    background-color:#F1F8E8;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    overflow: hidden; 
+    
+}
+
+.navbar {
+    
+    overflow: hidden;
+    margin: 20px 20px 10px 20px;
+    margin-bottom: 15px;
+    /* background-color: rgb(216, 218, 232); */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    /* color:  rgb(76, 244, 79); */
+    /* color: rgb(15,46,15); */
+    color:#387F39;
+    
+    text-align: center;
+    float:left;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.navbar-logo {
+    float: left;
+    
+    margin-right: 20px;
+  }
+  
+  .navbar-logo img {
+    width: auto;
+    height:50px
+  }
+
+.navbar a:hover {
+    background-color: #d1c876;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+.seller a:hover{
+    background-color: #15bf1e;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.navbar-right {
+    float: right;
+}
+
+
+.slideshow-container {
+    max-width: 1250px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.mySlides {
+    display:none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.mySlides img {
+    width: 100vw; /* full width of the screen */
+    height: 250px; /* fixed height of 200px */
+    object-fit: cover; /* scale the image to cover the entire container */
+    border: 2px solid black;
+}
+.partner {
+    color:#387F39; /* Green color */
+    text-align: center;
+    font-size: 20px; /* Adjust the size */
+    font-weight: bold;
+    margin:auto; /* Adds space above and below the text */
+    margin-bottom: 15px;
+}
+.sponsors {
+    position: relative;
+    width: 100vw;
+    height: 5vh;
+    overflow: hidden;
+    position : relative;
+    width: 100vw
+   
+}
+
+
+.sponsors-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide-left 7s linear infinite;
+}
+
+.sponsor {
+    flex: 0 0 auto;
+    width: 20vw; /* Adjust the width to fit multiple sponsors in a row */
+    height: 100%;
+    margin:0px 25px; /* Add a 10px gap between images */
+}
+
+.sponsor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Animation Styles */
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.skills {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* Align items to the start of the container */
+    padding: 20px;
+}
+
+.gr1-group {
+    display: flex;
+    justify-content: center; 
+    gap: 25px;
+    margin-bottom: 10px; 
+}
+
+.gr2-group {
+    display: flex;
+    justify-content:flex-start; 
+    gap: 25px;
+    margin-bottom: 20px;
+    margin-left: 60px; /* Push the .gr2-group to the right */
+    width: 100%; /* Ensure the group takes up full width to align right */
+}
+
+.gr1 {
+    background-color:#387F39;;
+    /* background-color:rgb(0,43,39); */
+    padding: 10px 20px;
+    margin: 0px; 
+    color: rgba(235, 234, 234, 0.912); 
+    border: none; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.gr1:hover {
+    /* background-color: rgb(56, 223, 49);  */
+    background-color: rgb(220, 41, 41);
+   
+    transform: scale(1.1); 
+}
+
+.gr2 {
+    /* background-color:rgb(0,43,39); */
+    background-color:#387F39;
+    padding: 10px 20px;
+    margin: 10px; 
+    border-radius: 12px;
+    color: rgb(255, 255, 255); 
+    border: none;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.gr2:hover {
+    background-color: rgb(223, 56, 56); /* Darker red on hover */
+    transform: scale(1.1); /* Slightly increase button size on hover */
+}
+.img1 {
+    float: right; /* This will push the image to the right */
+    margin-left: auto;
+}
+
+.img1 img {
+    max-width: 130px; /* Correct property to limit the image size */
+    height: auto; /* Ensures the image scales proportionally */
+}
+
+.social-media {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .social-media a {
+    margin: 0 10px; 
+  }
+  
+  .social-media img {
+    width: 35px; 
+    height: 35px;
+  }
+
+
+
